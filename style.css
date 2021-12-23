@@ -1,0 +1,55 @@
+html {
+	box-sizing: border-box;
+}
+*, *::before, *::after {
+	box-sizing: inherit;
+}
+body {
+	background-color: #800080;
+}
+
+.container {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+	margin: 0 auto;
+	height: 100vh;
+	width: 75%;
+	background: #800080;
+}
+.lap {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 200px;
+	width: 200px;
+	border-radius: 100px;
+	background: #A50021;
+}
+.lap div {
+	height: 100px;
+	width: 100px;
+	border-radius: 50px;
+	background: #000080;
+}
+.lap div:hover {
+	height: 100%;
+	width: 100%;
+	border-radius: 50%;
+	background: #FDEE00;
+}
+.first:hover {
+	background: #FDEE00;
+	transform: translateX(-50px)
+}
+.second:hover {
+	transform: translateY(50px)
+}
+.third:hover {
+	transform: translateY(-50px)
+}
+.fourth:hover {
+	background: #FDEE00;
+	transform: translateX(50px);
+}
